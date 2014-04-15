@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {english}
+\beamer@sectionintoc {2}{GSM Weakness in UMTS}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Authentication}{4}{0}{1}

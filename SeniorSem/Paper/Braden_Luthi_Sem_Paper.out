@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Background}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{GSM \046 UMTS }{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Cryptography }{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Man-in-the-middle Attack}{subsection.2.2}% 5
+\BOOKMARK [1][-]{section.3}{GSM/UMTS Handover Weakness }{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{GSM Authentication \046 Key Generation}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{UMTS Authentication \046 Key Generation }{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{MIM attack on GSM}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.4}{GSM/UTMS Handover }{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.5}{Solution}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Application Threat to Security}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Android Key-logging}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Ranged side-channel attack}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{side-channel Attack}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{The test}{section.5}% 16
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 17
+\BOOKMARK [1][-]{section.7}{References}{}% 18

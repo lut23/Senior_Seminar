@@ -1,0 +1,61 @@
+\begin{thebibliography}{1}
+
+\bibitem{mobile-usage}
+State of mobile 20013.
+\newblock
+  http://www.supermonitoring.com/blog/2013/09/23/state-of-mobile-2013-infographic/.
+\newblock accessed 24-March-2014.
+
+\bibitem{Barkan}
+E.~Barkan, E.~Biham, and N.~Keller.
+\newblock Instant ciphertext-only cryptanalysis of {GSM} encrypted
+  communication.
+\newblock In {\em Advances in Cryptology - CRYPTO 2003, 23rd Annual
+  International Cryptology Conference, Santa Barbara, California, USA, August
+  17-21, 2003, Proceedings}, volume 2729 of {\em Lecture Notes in Computer
+  Science}, pages 600--616. Springer, 2003.
+
+\bibitem{kenworthy}
+G.~Kenworthy and P.~Rohatgi.
+\newblock Mobile device security: The case for side channel resistance.
+\newblock In {\em IEEE CS Security and Privacy Workshop 2012}.
+
+\bibitem{Meyer:2004}
+U.~Meyer and S.~Wetzel.
+\newblock On the impact of gsm encryption and man-in-the-middle attacks on the
+  security of interoperating gsm/umts networks.
+\newblock In {\em Personal, Indoor and Mobile Radio Communications, 2004. PIMRC
+  2004. 15th IEEE International Symposium on}, volume~4, pages 2876--2883
+  Vol.4, Sept 2004.
+
+\bibitem{Keylogging}
+F.~Mohsen and M.~Shehab.
+\newblock Android keylogging threat.
+\newblock In {\em Collaborative Computing: Networking, Applications and
+  Worksharing (Collaboratecom), 2013 9th International Conference Conference
+  on}, pages 545--552, Oct 2013.
+
+\bibitem{2G-coverage}
+I.~T. Union.
+\newblock The world in 2011 {ITC} facts and figures.
+\newblock
+  http://www.itu.int/ITU-D/ict/facts/2011/material/ICTFactsFigures2011.pdf,
+  2011.
+
+\bibitem{wiki:GSM}
+Wikipedia.
+\newblock Gsm --- wikipedia{,} the free encyclopedia, 2014.
+\newblock [Online; accessed 8-March-2014].
+
+\bibitem{wiki:side-channel}
+Wikipedia.
+\newblock Side channel attack --- wikipedia{,} the free encyclopedia, 2014.
+\newblock [Online; accessed 24-March-2014].
+
+\bibitem{wiki:UMTS}
+Wikipedia.
+\newblock Universal mobile telecommunications system --- wikipedia{,} the free
+  encyclopedia, 2014.
+\newblock [Online; accessed 8-March-2014].
+
+\end{thebibliography}
