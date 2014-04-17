@@ -1,2 +1,10 @@
-\BOOKMARK [2][]{Outline0.2}{GSM Weakness in UMTS}{}% 1
-\BOOKMARK [3][]{Outline0.2.1.4}{Authentication}{Outline0.2}% 2
+\BOOKMARK [2][]{Outline0.2}{Background}{}% 1
+\BOOKMARK [3][]{Outline0.2.1.4}{GSM and UMTS}{Outline0.2}% 2
+\BOOKMARK [3][]{Outline0.2.2.4}{Cryptography}{Outline0.2}% 3
+\BOOKMARK [2][]{Outline0.3}{GSM Weakness in UMTS}{}% 4
+\BOOKMARK [3][]{Outline0.3.1.5}{Authentication}{Outline0.3}% 5
+\BOOKMARK [3][]{Outline0.3.2.6}{GSM and UMTS Inter-working Networks}{Outline0.3}% 6
+\BOOKMARK [3][]{Outline0.3.3.7}{Man-In-The-Middle Attack}{Outline0.3}% 7
+\BOOKMARK [3][]{Outline0.3.4.8}{Solution}{Outline0.3}% 8
+\BOOKMARK [2][]{Outline0.4}{Application Security Threat}{}% 9
+\BOOKMARK [2][]{Outline0.5}{EM Leaking Key Information?}{}% 10
