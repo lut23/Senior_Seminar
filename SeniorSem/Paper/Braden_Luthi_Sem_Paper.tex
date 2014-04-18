@@ -72,18 +72,18 @@ In cryptography a Man-in-the-middle attack (MIM) is a type of an attack were an 
 For example , consider two parties wanting to begin communication using  asymmetric cryptography. As in Figure~\ref{MIM} let us call them Alice and Bob. In addition to Alice and Bob we also have an attacker Mallory, who wants to listen in on or even manipulate the conversation between Alice and Bob.
 	\begin{description}
 	\item[1.] Mallory intercepts Alice's message to Bob\hfill\\\\
-	$Alice$: "Hi Bob, it's Alice send me your key" $\rightarrow$ $Mallory$
+	$Alice$: ``Hi Bob, it's Alice send me your key" $\rightarrow$ $Mallory$
 	\item[2.] Mallory relays the message to Bob; Bob cannot tell if the message is really from Alice \hfill\\\\
-	 $Mallory$ "Hi Bob, it's Alice send me your key" $\rightarrow$ $Bob$ 	
+	 $Mallory$ ``Hi Bob, it's Alice send me your key" $\rightarrow$ $Bob$ 	
 	\item[3.]Bob responds with his key \hfill\\\\
 	$Mallory$ $\leftarrow$[key$_{bob}$]  $Bob$
 	\item[4.] Mallory replaces Bob's key with her own, relays this to  Alice, claiming that it is Bobs key\hfill\\\\
 	$Alice$ $\leftarrow$[key$_{Mallory}$] $Mallory$
 	\item[5.]
 	Believing communication is secure Alice sends Bob a message believing only he can read it. \hfill\\\\
-	$A$ "send \$2000 to account XX34"[key$_{Mallory}$] $\rightarrow$ $M$ $B$
+	$Alice$ ``send \$2000 to account XX34"[key$_{Mallory}$] $\rightarrow$ $Mallory$
 	\item[6.] Because the message is encrypted with Mallory's key, Mallory can decrypt it, read and modify this message if she so desires, reencrypt it with Bob's key and Bob forward it to Bob who believes it is a secure message from Alice. \hfill\\\\
-	$A$ $M$"send \$2000 to account XX99"[key$_{Bob}$] $\rightarrow$ $B$
+	$Mallory$ ``send \$2000 to account XX99"[key$_{Bob}$] $\rightarrow$ $Bob$
 	\end{description}	
 	\begin{figure}
 		\centering
@@ -111,10 +111,11 @@ For example , consider two parties wanting to begin communication using  asymmet
 	As noted in \cite{Meyer:2004} GSM is susceptible to a man-in-the-middle (MIM) attack. An attacker forces a mobile device to connect to a fake base station. This can  be done by broadcasting the mobile's home network's networking number or by drowning out the the signal of a legitimate base station to force the mobile to connect. Because a mobile will connect to the best received base station so long that it is in  `stand-by' mode. With this done an attacker can effectively turn off all encryption by sending only A5/0 as a supported algorithm to the base station and the mobile device. This would allow an attacker to listen in on and modify any data traffic between the mobile device and the network.
 	\subsection{GSM/UTMS Handover \label{Handover}}
 	Although GSM is fairly old technology it is still used today as noted in Section \ref{GSM}. This means that the service providers network will have to handle both GSM and UMTS technologies to ensure greater coverage or roaming capabilities. This means that some coverage areas may have one or both GSM or UMTS base stations, as UMTS infrastructure continues to replace GSM. In order to ensure roaming capabilities of UMTS, a UMTS mobile device would need to be able to connect to either of these base stations. This also means that as GSM is replaced by UMTS, a GSM device would need to be able to connect to a UMTS base station. In order to accomplish this several procedures were developed in order to convert GSM keys into UMTS keys and vice versa. For example when a UMTS device connects with a GSM base station it needs to convert the encryption and integrity keys $\mathit{C_{ses}\text{ and } I_{K}}$ into the GSM encryption key $K_{ses}$.   
-
+	
+	In the following equations $\oplus$ is `exclusive or' and $\|$ is concatenation.
 \begin{equation}
 	\label{C_3}
-	\mathit{K_{ses} = c_{3}(I_{K},C_{ses}) = C_{ses1}||C_{ses2}||I_{K1}||I_{K2}}
+	\mathit{K_{ses} = c_{3}(I_{K},C_{ses}) = C_{ses1} \oplus C_{ses2}\oplus I_{K1} \oplus I_{K2}}
 \end{equation}
 
 Here $C_{ses} \text{and} I_{K} $ are broken into  $C_{ses1},C_{ses2},I_{K1}\text{ and }I_{K2}$ each with a length of 64 bits; such that $C_{ses1}$ and $I_{K1}$ correspond to the first 64 bits of $C_{ses},I_{K}$ respectively and $C_{ses2},I_{K2}$ correspond to the last 64 bits.
@@ -122,12 +123,12 @@ Here $C_{ses} \text{and} I_{K} $ are broken into  $C_{ses1},C_{ses2},I_{K1}\text
 
 \begin{equation} 
 \label{C_4}
-	\mathit{C_{ses} = c_{4}(K_{ses}) = K_{ses} || K_{ses}}
+	\mathit{C_{ses} = c_{4}(K_{ses}) = K_{ses} \| K_{ses}}
 \end{equation}
 
 \begin{equation}
 \label{C_5}
-	\mathit{I_{K} = c_{5}(K_{ses}) = K_{ses1}\oplus K_{ses2}||K_{ses}||K_{ses1}\oplus K_{ses2}}
+	\mathit{I_{K} = c_{5}(K_{ses}) = K_{ses1}\oplus K_{ses2}\|K_{ses}\|K_{ses1}\oplus K_{ses2}}
 \end{equation}
 
 Here $K_{ses1} \text{ and } K_{ses2}$ are 32 bits and $K_{ses1}$ corresponds to the first 32 bits of $K_{ses1}$ and $K_{ses2}$ corresponds to the last 32 bits.
@@ -189,7 +190,19 @@ Kenworthy et al. \cite{kenworthy} describes a study on possible side-channel att
 \subsection{side-channel Attack}
 A side-channel attack is another type of attack in cryptography however, unlike a Man-in-the-middle attack tricks users into revealing messages, a side-channel attack makes use of physical vulnerabilities of the machines preforming the encryption. There are several different types of side-channel attacks that make use of various kinds of physical data. For example there are timing attacks that measure the time computations take, power consumption attacks that monitor the varying power consumption of hardware, acoustic attacks which make use of sound generated during computation and electromagnetic attacks that read electromagnetic emissions during computation. The goal of all of these are to provide useful information about the encrypted communications by exploiting physical by-products of cryptographic processes. In many cases these attacks can reveal the secret key enabling one to decrytp all communications using the key  \cite{wiki:side-channel}.
 
-For example Figure~\ref{Power} depicts a power analysis attack of the CPU during RSA computation. RSA is a widely used asymmetric cryptographic algorithm for establishment of keys between two parties for use with symmetric cryptographic encryption. RSA uses the square and multiply algorithm for more efficient modular exponentiation. \textcolor{red}{explain RSA a little more, maybe include an example. explain the square and multiply algorithm} As noted before, Figure~\ref{Power} depicts power analysis during RSA computation. The large spikes in power usage indicates time where computation is occurring. The short spike corresponds to a squaring and the longer spike corresponds to a square and multiply. These power spike can be used to reveal the secret key used during RSA, the short power spike corresponds to a 0 and the long power spike corresponds to a 1. The portion of the secret key depicted in Figure~\ref{Power} would therefore be 01, this process can be done throughout the whole operation of RSA to reveal the complete secret key \textcolor{red}{cite springer}.
+For example Figure~\ref{Power} depicts a power analysis attack of the CPU during RSA computation. RSA is a widely used asymmetric cryptographic algorithm for establishment of keys between two parties for use with symmetric cryptographic encryption. RSA uses the square and multiply algorithm for more efficient modular exponentiation.
+
+\[\tag{Square and Multiply}
+x^n = \left\{
+  \begin{array}{lr}
+    x(x^2)^{\frac{n-1}{2}} &  \text{: if n is odd} \\
+    (x^2)^{\frac{n}{2}} & \text{: if n is even}
+  \end{array}
+\right.
+\]
+
+  As noted before, Figure~\ref{Power} depicts power analysis during RSA computation. The large spikes in power usage indicates time where computation is occurring. The short spike corresponds to a squaring and the longer spike corresponds to a square and multiply. These power spike can be used to reveal the secret key used during RSA, the short power spike corresponds to a 0 and the long power spike corresponds to a 1. The portion of the secret key depicted in Figure~\ref{Power} would therefore be 01, this process can be done throughout the whole operation of RSA to reveal the complete secret key \textcolor{red}{cite springer}.
+
 
 Generally side-channel attacks require physical access to the machine preforming the computation, making side-channel attacks rather difficult to preform, however in the rest of this section we will be exploring a side-channel attack that does not require direct physical access to the machine.    
    \begin{figure*}
