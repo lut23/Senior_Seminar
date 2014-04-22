@@ -2,5 +2,8 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: Braden_Luthi_Sem_Pape
 The style file: abbrv.bst
 Database file #1: Braden_Luthi_Sem_Paper.bib
 Warning--to sort, need author or key in mobile-usage
+Warning--to sort, need author, editor, or key in springer
+Warning--empty author and editor in springer
 Warning--empty year in kenworthy
-(There were 2 warnings)
+Warning--empty year in security-mech
+(There were 5 warnings)

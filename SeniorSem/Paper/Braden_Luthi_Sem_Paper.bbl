@@ -1,10 +1,14 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{mobile-usage}
 State of mobile 20013.
 \newblock
   http://www.supermonitoring.com/blog/2013/09/23/state-of-mobile-2013-infographic/.
 \newblock accessed 24-March-2014.
+
+\bibitem{springer}
+{\em Understanding Cryptography}.
+\newblock Springer, 2010.
 
 \bibitem{Barkan}
 E.~Barkan, E.~Biham, and N.~Keller.
@@ -35,6 +39,11 @@ F.~Mohsen and M.~Shehab.
   Worksharing (Collaboratecom), 2013 9th International Conference Conference
   on}, pages 545--552, Oct 2013.
 
+\bibitem{security-mech}
+T.~M. Stefan~Putz, Roland~Schmitz.
+\newblock Security mechanisms in umts.
+\newblock In {\em Datenschutz und Datensicherheit 25 (2001) X}.
+
 \bibitem{2G-coverage}
 I.~T. Union.
 \newblock The world in 2011 {ITC} facts and figures.
@@ -46,6 +55,12 @@ I.~T. Union.
 Wikipedia.
 \newblock Gsm --- wikipedia{,} the free encyclopedia, 2014.
 \newblock [Online; accessed 8-March-2014].
+
+\bibitem{wiki:man}
+Wikipedia.
+\newblock Man-in-the-middle attack --- wikipedia{,} the free encyclopedia,
+  2014.
+\newblock [Online; accessed 22-April-2014].
 
 \bibitem{wiki:side-channel}
 Wikipedia.
