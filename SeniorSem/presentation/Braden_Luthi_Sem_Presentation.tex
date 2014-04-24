@@ -81,19 +81,69 @@
   \tableofcontents[hideallsubsections]
 \end{frame}
 \section{Background}
+\subsection{Cryptography}
+
+	\begin{frame}
+	\frametitle{Cryptography}
+	
+		Cryptography or 'secret writing' is the study and practice of techniques for securing communications between two parties. \linebreak
+		\begin{itemize}
+			\item \textbf{plain-text}  Readable message to be sent during communications.
+			\item \textbf{cipher} method for transforming plain-text
+	        \item \textbf{key} parameter for cryptographic algorithm		
+			\item \textbf{cipher-text} Unreadable form of the message
+			
+		\end{itemize}		 
+	%basic introduction to cryptography and vocabulary
+	
+	\end{frame}
+	\begin{frame}
+	\frametitle{Cryptography}
+		\begin{itemize}
+			\item \textbf{Symmetric cryptography} 
+			Both parties share a secret key for encryption and decryption
+			\item \textbf{Asymmetric cryptography}
+			Each individual has a public and a private key. Parties use the public keys for encryption and the private keys for decryption
+		\end{itemize}
+	
+	\end{frame}
+
 \subsection{GSM and UMTS}
 	\subsubsection{GSM}
 		\begin{frame}
-		\frametitle{GSM}		
+		\frametitle{GSM}
+		Global System for Mobile Communications (GSM) is a 2G telecommunication standard developed in the early 90's by the European Telecommunications Institute. Has become one of the most widely used standards, reaching an 80\% market share at its height.
+					
 		\end{frame}
 	\subsubsection{UMTS}
 	\begin{frame}
 		\frametitle{UMTS}
+		Universal Telecommunications Standard (UMTS) is 3G telecommunication standard based on GSM by the Third Generation Partnership Project.   
 	\end{frame}
-\subsection{Cryptography}
-	%basic introduction to cryptography and vocabulary
-	%toy cipher example.
+
+	
 \section{GSM Weakness in UMTS}
+
+	
+
+	\begin{frame}
+	\frametitle{Encryption in GSM and UTMS}
+	\begin{itemize}
+	
+	
+		\item GSM and UMTS both have secret keys that are shared between the mobile and the mobile's home network authentication center.
+		
+		\item GSM and UMTS both utilize the A5 family of encryption algorithms. 
+		 \begin{itemize}
+			\item A5/0 
+			\item A5/1
+			\item A5/2
+			\item A5/3 
+		\end{itemize}
+		\end{itemize}
+		
+	\end{frame}
+	
 \subsection{Authentication}
 \begin{frame}
 % add hidden frames, introduce requests one at a time
@@ -108,7 +158,15 @@
 \begin{frame}
 	\frametitle{Inter-working Networks}
 \end{frame}
-\subsection{Man-In-The-Middle Attack}
+\subsection{Man-in-the-middle Attack}
+\begin{frame}
+		\frametitle{Man-in-the-middle Attack}
+		% describe man in the middle attack
+		\end{frame}
+		
+		% add man in the middle attack example		
+		
+		
 \begin{frame}
 	\frametitle{Man-in-the-middle weakness in GSM}
 	% refer back to GSM authentication diagram ?
@@ -118,9 +176,51 @@
 \frametitle{Protecting UMTS from GSM Man-in-the-middle attack}
 \end{frame}
 \section{Application Security Threat}
+	\subsection{Applications}
+		\begin{frame}
+		\frametitle{Applications (Apps)}
+		\end{frame}
+		\begin{frame}
+		\frametitle{Application Permissions in Android}
+		\end{frame}
+		\begin{frame}
+		\frametitle{Application Threat keyboard Key-logger}
+		\end{frame}
+	\subsection{Solution}
+		\begin{frame}
+		\frametitle{KBS Checker}
+		\end{frame}
 \section{EM Leaking Key Information}
 	\subsection{Side channel attack}
+		\begin{frame}
+		\frametitle{What is a Side channel attack?}
+		\end{frame}
+		\begin{frame}
+		\frametitle{RSA Example}
+		\end{frame}
 	\subsection{Side channel through EM }
+		\begin{frame}
+		\frametitle{Ranged Side channel}
+		\end{frame}
+		
+		\begin{frame}
+		\frametitle{Findings}
+		\end{frame}
+		
+		\begin{frame}
+		\frametitle{Solution}
+		\end{frame}
+\section{conclusion}
+	\begin{frame}
+		\frametitle{Conclusion}
+		\end{frame}	
+		
+		\begin{frame}
+		\frametitle{Questions}
+			\begin{center}
+			\Huge Questions?
+			\end{center}
+		\end{frame}	
 
 \end{document}
 

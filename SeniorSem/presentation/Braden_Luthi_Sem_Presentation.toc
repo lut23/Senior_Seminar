@@ -1,14 +1,19 @@
-\beamer@endinputifotherversion {3.33pt}
+\beamer@endinputifotherversion {3.06pt}
 \select@language {english}
 \beamer@sectionintoc {2}{Background}{3}{0}{1}
-\beamer@subsectionintoc {2}{1}{GSM and UMTS}{4}{0}{1}
-\beamer@subsubsectionintoc {2}{1}{1}{GSM}{4}{0}{1}
-\beamer@subsubsectionintoc {2}{1}{2}{UMTS}{5}{0}{1}
-\beamer@subsectionintoc {2}{2}{Cryptography}{6}{0}{1}
-\beamer@sectionintoc {3}{GSM Weakness in UMTS}{6}{0}{2}
-\beamer@subsectionintoc {3}{1}{Authentication}{7}{0}{2}
-\beamer@subsectionintoc {3}{2}{GSM and UMTS Inter-working Networks}{8}{0}{2}
-\beamer@subsectionintoc {3}{3}{Man-In-The-Middle Attack}{9}{0}{2}
-\beamer@subsectionintoc {3}{4}{Solution}{10}{0}{2}
-\beamer@sectionintoc {4}{Application Security Threat}{11}{0}{3}
-\beamer@sectionintoc {5}{EM Leaking Key Information}{12}{0}{4}
+\beamer@subsectionintoc {2}{1}{Cryptography}{4}{0}{1}
+\beamer@subsectionintoc {2}{2}{GSM and UMTS}{6}{0}{1}
+\beamer@subsubsectionintoc {0}{2}{2}{1}{6}{1}{GSM}
+\beamer@subsubsectionintoc {0}{2}{2}{2}{7}{1}{UMTS}
+\beamer@sectionintoc {3}{GSM Weakness in UMTS}{8}{0}{2}
+\beamer@subsectionintoc {3}{1}{Authentication}{10}{0}{2}
+\beamer@subsectionintoc {3}{2}{GSM and UMTS Inter-working Networks}{11}{0}{2}
+\beamer@subsectionintoc {3}{3}{Man-in-the-middle Attack}{12}{0}{2}
+\beamer@subsectionintoc {3}{4}{Solution}{14}{0}{2}
+\beamer@sectionintoc {4}{Application Security Threat}{15}{0}{3}
+\beamer@subsectionintoc {4}{1}{Applications}{16}{0}{3}
+\beamer@subsectionintoc {4}{2}{Solution}{19}{0}{3}
+\beamer@sectionintoc {5}{EM Leaking Key Information}{20}{0}{4}
+\beamer@subsectionintoc {5}{1}{Side channel attack}{21}{0}{4}
+\beamer@subsectionintoc {5}{2}{Side channel through EM }{23}{0}{4}
+\beamer@sectionintoc {6}{conclusion}{26}{0}{5}
