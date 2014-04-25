@@ -89,10 +89,18 @@
 		Cryptography or 'secret writing' is the study and practice of techniques for securing communications between two parties. \linebreak
 		\begin{itemize}
 			\item \textbf{plain-text}  Readable message to be sent during communications.
-			\item \textbf{cipher} method for transforming plain-text
-	        \item \textbf{key} parameter for cryptographic algorithm		
 			\item \textbf{cipher-text} Unreadable form of the message
+			\item \textbf{key} parameter for cryptographic algorithm or cipher		
+			\item \textbf{cipher} method for transforming plain-text
+			\begin{itemize}
+				\item \textbf{Encrypt} transform plain-text to cipher-text
+				\item \textbf{Decrypt} transform cipher-text back into plain-text
+				
+				
+			\end{itemize}
+	        		
 			
+			%--add toy cipher example--%
 		\end{itemize}		 
 	%basic introduction to cryptography and vocabulary
 	
@@ -105,20 +113,20 @@
 			\item \textbf{Asymmetric cryptography}
 			Each individual has a public and a private key. Parties use the public keys for encryption and the private keys for decryption
 		\end{itemize}
+		%--add Asymmetric example--%
 	
 	\end{frame}
 
 \subsection{GSM and UMTS}
-	\subsubsection{GSM}
+	
 		\begin{frame}
-		\frametitle{GSM}
-		Global System for Mobile Communications (GSM) is a 2G telecommunication standard developed in the early 90's by the European Telecommunications Institute. Has become one of the most widely used standards, reaching an 80\% market share at its height.
+		\begin{itemize}
+		\item Global System for Mobile Communications (GSM) is a 2G telecommunication standard developed in the early 90s by the European Telecommunications Institute. Has become one of the most widely used standards, reaching an 80\% market share at its height.
 					
-		\end{frame}
-	\subsubsection{UMTS}
-	\begin{frame}
-		\frametitle{UMTS}
-		Universal Telecommunications Standard (UMTS) is 3G telecommunication standard based on GSM by the Third Generation Partnership Project.   
+		
+		\item Universal Telecommunications Standard (UMTS) is 3G telecommunication standard based on GSM by the Third Generation Partnership Project in the early 2000s.   
+		\end{itemize}
+		%--Mention interworking networks here--%
 	\end{frame}
 
 	
@@ -141,17 +149,17 @@
 			\item A5/3 
 		\end{itemize}
 		\end{itemize}
-		
 	\end{frame}
 	
 \subsection{Authentication}
 
-%-----------Fix-----------------%
+%-----------GSM Authentication-----------------%
+	% Talk Mention GSM weakness to Man in the middle Attack
 \begin{frame}
 % add hidden frames, introduce requests one at a time
   \frametitle{GSM Authentication}
   \begin{center}
-  \includegraphics[scale =.25]{Images/GSMAuthentication1.pdf}
+  \includegraphics[width=.9\textwidth, height=.85\textheight]{Images/GSMAuthentication1.pdf}
 
   \end{center} 
 \end{frame}
@@ -159,7 +167,7 @@
 % add hidden frames, introduce requests one at a time
   \frametitle{GSM Authentication}
   \begin{center}
-  \includegraphics[scale =.25]{Images/GSMAuthentication2.pdf}
+  \includegraphics[width=.9\textwidth, height=.85\textheight]{Images/GSMAuthentication2.pdf}
 
   \end{center} 
 \end{frame}
@@ -167,7 +175,7 @@
 % add hidden frames, introduce requests one at a time
   \frametitle{GSM Authentication}
   \begin{center}
-  \includegraphics[scale =.25]{Images/GSMAuthentication3.pdf}
+  \includegraphics[width=.9\textwidth, height=.85\textheight]{Images/GSMAuthentication3.pdf}
 
   \end{center} 
 \end{frame}
@@ -175,36 +183,63 @@
 % add hidden frames, introduce requests one at a time
   \frametitle{GSM Authentication}
   \begin{center}
-  \includegraphics[scale =.25]{Images/GSMAuthentication4.pdf}
-
-  \end{center} 
-\end{frame}
-\begin{frame}
-% add hidden frames, introduce requests one at a time
-  \frametitle{GSM Authentication}
-  \begin{center}
-  \includegraphics[scale =.25]{Images/GSMAuthentication5.pdf}
+  \includegraphics[width=.9\textwidth, height=.85\textheight]{Images/GSMAuthentication4.pdf}
 
   \end{center} 
 \end{frame}
 
-%-----------Fix-----------------%
-
-\subsection{GSM and UMTS Inter-working Networks}
-\begin{frame}
-	\frametitle{Inter-working Networks}
-\end{frame}
 \subsection{Man-in-the-middle Attack}
 \begin{frame}
 		\frametitle{Man-in-the-middle Attack}
-		% describe man in the middle attack
+		\begin{columns}
+		\begin{column}[T]{5cm}
+		Man-in-the-middle attack is a type of attack in Cryptography where an attacker tricks participants into sending their communications through the attacker.   
+		\end{column}
+		\column{.5\textwidth}
+		\includegraphics[scale=.45]{Images/MIM.jpg}
+		\end{columns}
 		\end{frame}
 		
+		\begin{frame}
+	\frametitle{Man-in-the-middle Attack}
+		TODO: add Example Diagram of Man-in-the-middle attack modeled after example in paper.	
+\end{frame}
 		% add man in the middle attack example		
-		
+%-----------UMTS Authentication-----------------%
+
+\subsection{GSM and UMTS Inter-working Networks}
+\begin{frame}
+	\frametitle{Transitional Networks}
+	TODO: bullet points?\\
+		There are transitional periods between old and new technologies such as GSM and UMTS are required as old infrastructure and devices are replaced with the new. During these periods both old and new technologies will need to be able to successfully interact with one another.
+		\\2011 survey where 2G devices had around 90\% population coverage where as 3G only had 45\%
+\end{frame}
+
+	\begin{frame}
+	
+	\frametitle{GSM and UMTS Inter-working network}
+	
+	
+	In order for GSM and UMTS systems to work all UMTS systems must be capable of performing GSM communication. For encryption this means there needs to be ways of transforming 128 bit UMTS keys into the 64 bit GSM keys 
+	
+	
+		\begin{equation}
+			\label{C_3}
+			\mathit{K_{ses} = c_{3}(I_{K},C_{ses}) = C_{ses1} \oplus 					C_{ses2}\oplus I_{K1} \oplus I_{K2}}
+		\end{equation}
+		\begin{equation} 
+			\label{C_4}
+			\mathit{C_{ses} = c_{4}(K_{ses}) = K_{ses} \| K_{ses}}
+		\end{equation}
+		\begin{equation}
+			\label{C_5}
+			\mathit{I_{K} = c_{5}(K_{ses}) = K_{ses1}\oplus K_{ses2}\|					K_{ses}\|K_{ses1}\oplus K_{ses2}}
+		\end{equation}
+	
+\end{frame}	
 		
 \begin{frame}
-	\frametitle{Man-in-the-middle weakness in GSM}
+	\frametitle{GSM Man-in-the-middle weakness in UMTS}
 	% refer back to GSM authentication diagram ?
 \end{frame}
 \subsection{Solution}
@@ -226,7 +261,7 @@
 		\begin{frame}
 		\frametitle{KBS Checker}
 		\end{frame}
-\section{EM Leaking Key Information}
+\section{Electromagnetic Radiation Leaking Key Information}
 	\subsection{Side channel attack}
 		\begin{frame}
 		\frametitle{What is a Side channel attack?}
@@ -246,7 +281,7 @@
 		\begin{frame}
 		\frametitle{Solution}
 		\end{frame}
-\section{conclusion}
+\section{Conclusion}
 	\begin{frame}
 		\frametitle{Conclusion}
 		\end{frame}	
