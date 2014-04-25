@@ -1,4 +1,4 @@
-\beamer@endinputifotherversion {3.33pt}
+\beamer@endinputifotherversion {3.06pt}
 \select@language {english}
 \beamer@sectionintoc {2}{Background}{3}{0}{1}
 \beamer@subsectionintoc {2}{1}{Cryptography}{4}{0}{1}
@@ -6,12 +6,12 @@
 \beamer@sectionintoc {3}{GSM Weakness in UMTS}{7}{0}{2}
 \beamer@subsectionintoc {3}{1}{Authentication}{9}{0}{2}
 \beamer@subsectionintoc {3}{2}{Man-in-the-middle Attack}{13}{0}{2}
-\beamer@subsectionintoc {3}{3}{GSM and UMTS Inter-working Networks}{15}{0}{2}
-\beamer@subsectionintoc {3}{4}{Solution}{18}{0}{2}
-\beamer@sectionintoc {4}{Application Security Threat}{19}{0}{3}
-\beamer@subsectionintoc {4}{1}{Applications}{20}{0}{3}
-\beamer@subsectionintoc {4}{2}{Solution}{23}{0}{3}
-\beamer@sectionintoc {5}{Electromagnetic Radiation Leaking Key Information}{24}{0}{4}
-\beamer@subsectionintoc {5}{1}{Side channel attack}{25}{0}{4}
-\beamer@subsectionintoc {5}{2}{Side channel through EM }{27}{0}{4}
-\beamer@sectionintoc {6}{Conclusion}{30}{0}{5}
+\beamer@subsectionintoc {3}{3}{GSM and UMTS Inter-working Networks}{18}{0}{2}
+\beamer@subsectionintoc {3}{4}{Solution}{21}{0}{2}
+\beamer@sectionintoc {4}{Application Security Threat}{22}{0}{3}
+\beamer@subsectionintoc {4}{1}{Applications}{23}{0}{3}
+\beamer@subsectionintoc {4}{2}{Solution}{26}{0}{3}
+\beamer@sectionintoc {5}{Electromagnetic Radiation Leaking Key Information}{27}{0}{4}
+\beamer@subsectionintoc {5}{1}{Side channel attack}{28}{0}{4}
+\beamer@subsectionintoc {5}{2}{Side channel through EM }{30}{0}{4}
+\beamer@sectionintoc {6}{Conclusion}{33}{0}{5}

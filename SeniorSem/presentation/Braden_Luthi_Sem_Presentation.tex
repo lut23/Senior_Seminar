@@ -202,27 +202,48 @@
 		
 		\begin{frame}
 	\frametitle{Man-in-the-middle Attack}
-		TODO: add Example Diagram of Man-in-the-middle attack modeled after example in paper.	
+		TODO: add Example Diagram of Man-in-the-middle attack modeled after example in paper? maybe just explain it using GSM weakness.	
 \end{frame}
 		% add man in the middle attack example		
 %-----------UMTS Authentication-----------------%
+	\begin{frame}
+	\frametitle{UMTS Authentication}
+  \begin{center}
+  \includegraphics[width=.9\textwidth, height=.85\textheight]{Images/UMTSAuthentication1.pdf}
 
+  \end{center} 
+	\end{frame}
+	\begin{frame}
+	\frametitle{UMTS Authentication}
+  \begin{center}
+  \includegraphics[width=.9\textwidth, height=.85\textheight]{Images/UMTSAuthentication2.pdf}
+
+  \end{center} 
+	\end{frame}
+	\begin{frame}
+	\frametitle{UMTS Authentication}
+  \begin{center}
+  \includegraphics[width=.9\textwidth, height=.85\textheight]{Images/UMTSAuthentication3.pdf}
+
+  \end{center} 
+	\end{frame}
 \subsection{GSM and UMTS Inter-working Networks}
 \begin{frame}
 	\frametitle{Transitional Networks}
-	TODO: bullet points?\\
+	
+	 bullet points?\\
 		There are transitional periods between old and new technologies such as GSM and UMTS are required as old infrastructure and devices are replaced with the new. During these periods both old and new technologies will need to be able to successfully interact with one another.
 		\\2011 survey where 2G devices had around 90\% population coverage where as 3G only had 45\%
 \end{frame}
 
 	\begin{frame}
 	
-	\frametitle{GSM and UMTS Inter-working network}
+	\frametitle{Inter-working networks GSM and UMTS Hand Over}
 	
 	
 	In order for GSM and UMTS systems to work all UMTS systems must be capable of performing GSM communication. For encryption this means there needs to be ways of transforming 128 bit UMTS keys into the 64 bit GSM keys 
 	
-	
+	-- describe Hand over--
 		\begin{equation}
 			\label{C_3}
 			\mathit{K_{ses} = c_{3}(I_{K},C_{ses}) = C_{ses1} \oplus 					C_{ses2}\oplus I_{K1} \oplus I_{K2}}
@@ -240,6 +261,9 @@
 		
 \begin{frame}
 	\frametitle{GSM Man-in-the-middle weakness in UMTS}
+	Meyer et al describe a Man-in-the-middle attack against UMTS using GSM's weakness.
+	\\
+	
 	% refer back to GSM authentication diagram ?
 \end{frame}
 \subsection{Solution}
@@ -250,13 +274,24 @@
 	\subsection{Applications}
 		\begin{frame}
 		\frametitle{Applications (Apps)}
+		\begin{itemize}
+		\item Applications or Apps are software designed to run on mobile devices 
+		\item Apple reported 40 billion app downloads in first quarter of 2013 
+		\item Apps pose a security threat as they can have access to both user and the system such as contacts and camera.
+		\end{itemize}
+		\end{frame}
+		\begin{frame}
+		\frametitle{Application Threat keyboard Key-logger}
+		\begin{itemize}
+		\item Mohsen et al. describes the possibility of an Android keyboard application that acts as a key-logger
+		\item A key-logger is a device or piece of software that records key strokes
+		\item usernames, passwords and credit card numbers  
+		\end{itemize}
 		\end{frame}
 		\begin{frame}
 		\frametitle{Application Permissions in Android}
 		\end{frame}
-		\begin{frame}
-		\frametitle{Application Threat keyboard Key-logger}
-		\end{frame}
+		
 	\subsection{Solution}
 		\begin{frame}
 		\frametitle{KBS Checker}
