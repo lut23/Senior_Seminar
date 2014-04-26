@@ -11,7 +11,7 @@
 \beamer@sectionintoc {4}{Application Security Threat}{22}{0}{3}
 \beamer@subsectionintoc {4}{1}{Applications}{23}{0}{3}
 \beamer@subsectionintoc {4}{2}{Solution}{26}{0}{3}
-\beamer@sectionintoc {5}{Electromagnetic Radiation Leaking Key Information}{27}{0}{4}
+\beamer@sectionintoc {5}{Ranged Side-channel Attack}{27}{0}{4}
 \beamer@subsectionintoc {5}{1}{Side channel attack}{28}{0}{4}
 \beamer@subsectionintoc {5}{2}{Side channel through EM }{30}{0}{4}
 \beamer@sectionintoc {6}{Conclusion}{33}{0}{5}
