@@ -9,6 +9,7 @@
 \usepackage[english]{babel}
 \usepackage[latin1]{inputenc}
 \usepackage{times}
+\usepackage{amssymb}
 \usepackage[T1]{fontenc} 
 % Or whatever. Note that the encoding and the font should match. If T1
 % does not look nice, try deleting the line with the fontenc.
@@ -86,7 +87,7 @@
 	\begin{frame}
 	\frametitle{Cryptography}
 	
-		Cryptography or 'secret writing' is the study and practice of techniques for securing communications between two parties. \linebreak
+		Cryptography or `secret writing' is the study and practice of techniques for securing communications between two parties. \linebreak
 		\begin{itemize}
 			\item \textbf{plain-text}  Readable message to be sent during communications.
 			\item \textbf{cipher-text} Unreadable form of the message
@@ -95,13 +96,12 @@
 			\begin{itemize}
 				\item \textbf{Encrypt} transform plain-text to cipher-text
 				\item \textbf{Decrypt} transform cipher-text back into plain-text
-				
-				
 			\end{itemize}
-	        		
-			
 			%--add toy cipher example--%
-		\end{itemize}		 
+		\end{itemize}		
+		\textbf{Shift Cipher}\\
+
+		\textit{``Hello World!''} $\underrightarrow{\text{Shift letters by 1}}$ \textit{``Ifmmp Xpsme!''} 
 	%basic introduction to cryptography and vocabulary
 	
 	\end{frame}
@@ -183,6 +183,7 @@
 \begin{frame}
 % add hidden frames, introduce requests one at a time
   \frametitle{GSM Authentication}
+
   \begin{center}
   \includegraphics[width=.9\textwidth, height=.85\textheight]{Images/GSMAuthentication4.pdf}
 
@@ -191,6 +192,7 @@
 %----------- GSM Man in the middle attack----------------%
 \subsection{Man-in-the-middle Attack}
 \begin{frame}
+	
 		\frametitle{Man-in-the-middle Attack}
 		\begin{columns}
 		\begin{column}[T]{5cm}
@@ -203,7 +205,28 @@
 		
 		\begin{frame}
 	\frametitle{Man-in-the-middle Attack}
-		TODO: add Example Diagram of Man-in-the-middle attack modeled after example in paper? maybe just explain it using GSM weakness.	
+		\begin{description}
+	\item[1.] Mallory intercepts Alice's message to Bob asking for his public key.\hfill\\
+	$Alice$: ``Hi Bob, it's Alice send me your key" $\rightarrow$ $Mallory$
+	\item[2.] Mallory relays the message to Bob; Bob cannot tell if the message is really from Alice \hfill\\
+	 $Mallory$ ``Hi Bob, it's Alice send me your key" $\rightarrow$ $Bob$ 	
+	\item[3.]Bob responds with his key \hfill\\
+	$Mallory$ $\leftarrow$[key$_{bob}$]  $Bob$
+	\end{description}
+	\end{frame}
+	\begin{frame}
+	\frametitle{Man-in-the-middle Attack}
+	\begin{description}
+	
+	\item[4.] Mallory replaces Bob's key with her own, relays this to  Alice, claiming that it is Bobs key\hfill\\
+	$Alice$ $\leftarrow$[key$_{Mallory}$] $Mallory$
+	\item[5.]
+	Believing communication is secure Alice sends Bob a message believing only he can read it. \hfill\\
+	$Alice$ ``send \$2000 to account 2034"[key$_{Mallory}$] \\
+	$~\quad\quad\quad\quad\rightarrow$ $Mallory$
+	\item[6.] Because the message is encrypted with Mallory's key, Mallory can decrypt it, read and modify this message if she so desires, reencrypt it with Bob's key and Bob forward it to Bob who believes it is a secure message from Alice. \hfill\\
+	$Mallory$ ``send \$2000 to account 1099"[key$_{Bob}$] $\rightarrow$ $Bob$
+	\end{description}	
 \end{frame}
 		% add man in the middle attack example		
 %-----------UMTS Authentication-----------------%
@@ -245,14 +268,19 @@
 	In order for GSM and UMTS systems to work all UMTS systems must be capable of performing GSM communication. For encryption this means there needs to be ways of transforming 128 bit UMTS keys into the 64 bit GSM keys\\ 
 	
 	-- describe Hand over--
+	\end{frame}
+	\begin{frame}
+		\frametitle{Conversion}
 		\begin{equation}
 			\label{C_3}
 			\mathit{K_{ses} = c_{3}(I_{K},C_{ses}) = C_{ses1} \oplus 					C_{ses2}\oplus I_{K1} \oplus I_{K2}}
-		\end{equation}
+		\end{equation}\\
+
 		\begin{equation} 
 			\label{C_4}
 			\mathit{C_{ses} = c_{4}(K_{ses}) = K_{ses} \| K_{ses}}
-		\end{equation}
+		\end{equation}\\
+
 		\begin{equation}
 			\label{C_5}
 			\mathit{I_{K} = c_{5}(K_{ses}) = K_{ses1}\oplus K_{ses2}\|					K_{ses}\|K_{ses1}\oplus K_{ses2}}
@@ -262,8 +290,13 @@
 		
 \begin{frame}
 	\frametitle{GSM Man-in-the-middle weakness in UMTS}
-	Meyer et al describe a Man-in-the-middle attack against UMTS using GSM's weakness.
-	\\
+	\begin{itemize}
+	\item[1]Meyer et al describe a Man-in-the-middle attack against UMTS using GSM's man-in-the-middle weakness.
+	\item[2]An attacker sets up a dummy base station tricks a UMTS device into connecting to it
+	\item[3]Attacker relays messages between mobile device and the legitimate network
+	\item[4]During Hand Shake procedure the attacker selects A5/0 algorithm
+	\end{itemize}
+	
 	
 	% refer back to GSM authentication diagram ?
 \end{frame}
@@ -272,6 +305,7 @@
 
 
 \frametitle{Protecting UMTS from GSM Man-in-the-middle attack}
+ Additional authentication step would be performed when a UMTS device would be switching from a UMTS base station to a GSM base station.
 \end{frame}
 \section{Application Security Threat}
 
@@ -334,13 +368,14 @@
 		\begin{column}{.45\textwidth}
 		\textbf{KBS Checker}
 		\begin{itemize}
-		\item Reads app Permissions through \textit{PackageManager}
+		\item Reads app Permissions
 		\item Looks for dangerous combinations of permissions
 		\item Warns user with the app's name and the threat it could pose
 		\end{itemize}
 		\end{column}
 		\begin{column}{.45\textwidth}
-			\textbf{Image of KBS Checker}
+			\textbf{KBS Checker}
+			\includegraphics[width = \textwidth]{Images/KBSChecker.png} 
 		\end{column}
 		\end{columns}
 		\end{frame}
@@ -356,7 +391,11 @@
 		Kenworthy et al. described an attack using inexpensive radio equipment to capture and analyze electro magnetic (EM) to perform a ranged side-channel attack.
 		\end{column}
 		\begin{column}{.45\textwidth}
-			image of some of the equipment
+		
+			 \includegraphics[width=\textwidth]{Images/antennaWithDevice.png}
+			 \linebreak
+			\includegraphics[width=\textwidth]{Images/antenna.png} 
+			
 		\end{column}
 		\end{columns}
 		% Intro for the researchers and about their
@@ -415,24 +454,39 @@
 		% Example RSA attack 
 		\end{frame}
 		\begin{frame}
-		   ADD RSA attack example
+		  \includegraphics[width= \textwidth]{Images/Power_attack.png} 
 		\end{frame}
-	\subsection{Side channel through EM }
+	\subsection{Side channel through EM}
 		
 		\begin{frame}
 		\frametitle{Findings}
-		%
+		\begin{columns}[T]
+		\begin{column}{.45\textwidth}
+		\textbf{Findings}
+		\begin{itemize}
+		\item tested on multiple os and devices
+		\item tested multiple algorithms
+		\end{itemize}
+		\textbf{Solution}
+		\begin{itemize}
+		\item add noise to RSA
+		\item Bulk encryption
+		\end{itemize}
+		 
+		
+		\end{column}
+		\begin{column}{.45\textwidth}
+		\textbf{RSA EM Attack}
+		\includegraphics[scale=.3]{Images/RSA.jpg}
+		\end{column}
+		\end{columns}
 		% Tested this on multiple devices with different OSs
 		% Using a number of different ciphers
 		% were able to desern keys of ciphers 
-		\end{frame}
+	
 		
-		\begin{frame}
-		\frametitle{Solution}
-			%
 			% add noise during cryptographic computations
-			% 
-			%
+			
 		\end{frame}
 \section{Conclusion}
 	\begin{frame}
@@ -445,6 +499,9 @@
 			\Huge Questions?
 			\end{center}
 		\end{frame}	
+		\begin{frame}
+		\frametitle{References}
+		\end{frame}
 
 \end{document}
 
