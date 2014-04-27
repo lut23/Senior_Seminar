@@ -141,6 +141,8 @@
 	
 	
 		\item GSM and UMTS both have secret keys that are shared between the mobile and the mobile's home network authentication center.
+		\item Keys in GSM are 64 bits
+		\item Keys in UMTS are 128 bits
 		
 		\item GSM and UMTS both utilize the A5 family of encryption algorithms. 
 		 \begin{itemize}
@@ -254,7 +256,7 @@
 \subsection{GSM and UMTS Inter-working Networks}
 \begin{frame}
 	\frametitle{Transitional Networks}
-	
+	Move to after introduce gsm
 	 bullet points?\\
 		There are transitional periods between old and new technologies such as GSM and UMTS are required as old infrastructure and devices are replaced with the new. During these periods both old and new technologies will need to be able to successfully interact with one another.
 		\\2011 survey where 2G devices had around 90\% population coverage where as 3G only had 45\%
@@ -264,18 +266,18 @@
 	
 	\frametitle{Inter-working networks GSM and UMTS Hand Over}
 	
+	In order for GSM and UMTS systems to work all UMTS systems must be capable of performing GSM communication this includes a need for a handover. Handover refers to when a mobile is in the middle of preforming communication when it needs to switch to a new base station. For encryption this means there needs to be ways of transforming 128 bit UMTS keys into the 64 bit GSM keys and vise versa\\ 
 	
-	In order for GSM and UMTS systems to work all UMTS systems must be capable of performing GSM communication. For encryption this means there needs to be ways of transforming 128 bit UMTS keys into the 64 bit GSM keys\\ 
 	
-	-- describe Hand over--
 	\end{frame}
 	\begin{frame}
 		\frametitle{Conversion}
+		\textbf{UMTS to GSM}
 		\begin{equation}
 			\label{C_3}
 			\mathit{K_{ses} = c_{3}(I_{K},C_{ses}) = C_{ses1} \oplus 					C_{ses2}\oplus I_{K1} \oplus I_{K2}}
 		\end{equation}\\
-
+		\textbf{GSM to UMTS}
 		\begin{equation} 
 			\label{C_4}
 			\mathit{C_{ses} = c_{4}(K_{ses}) = K_{ses} \| K_{ses}}
@@ -305,7 +307,8 @@
 
 
 \frametitle{Protecting UMTS from GSM Man-in-the-middle attack}
- Additional authentication step would be performed when a UMTS device would be switching from a UMTS base station to a GSM base station.
+ Additional authentication and key generation step would be performed before a handover procedure.\\
+ Protects broken session keys from being transformed and carried over after the handover.
 \end{frame}
 \section{Application Security Threat}
 
