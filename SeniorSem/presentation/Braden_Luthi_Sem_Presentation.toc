@@ -1,4 +1,4 @@
-\beamer@endinputifotherversion {3.06pt}
+\beamer@endinputifotherversion {3.33pt}
 \select@language {english}
 \beamer@sectionintoc {2}{Background}{3}{0}{1}
 \beamer@subsectionintoc {2}{1}{Cryptography}{4}{0}{1}
@@ -12,6 +12,6 @@
 \beamer@subsectionintoc {4}{1}{Applications}{23}{0}{3}
 \beamer@subsectionintoc {4}{2}{Solution}{26}{0}{3}
 \beamer@sectionintoc {5}{Ranged Side-channel Attack}{27}{0}{4}
-\beamer@subsectionintoc {5}{1}{Side channel attack}{28}{0}{4}
-\beamer@subsectionintoc {5}{2}{Side channel through EM }{30}{0}{4}
-\beamer@sectionintoc {6}{Conclusion}{33}{0}{5}
+\beamer@subsectionintoc {5}{1}{Side channel attack}{29}{0}{4}
+\beamer@subsectionintoc {5}{2}{Side channel through EM }{32}{0}{4}
+\beamer@sectionintoc {6}{Conclusion}{34}{0}{5}

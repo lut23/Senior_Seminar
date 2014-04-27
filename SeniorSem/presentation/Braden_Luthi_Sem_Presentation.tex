@@ -242,7 +242,7 @@
 	\frametitle{Inter-working networks GSM and UMTS Hand Over}
 	
 	
-	In order for GSM and UMTS systems to work all UMTS systems must be capable of performing GSM communication. For encryption this means there needs to be ways of transforming 128 bit UMTS keys into the 64 bit GSM keys 
+	In order for GSM and UMTS systems to work all UMTS systems must be capable of performing GSM communication. For encryption this means there needs to be ways of transforming 128 bit UMTS keys into the 64 bit GSM keys\\ 
 	
 	-- describe Hand over--
 		\begin{equation}
@@ -282,7 +282,7 @@
 		\begin{itemize}
 		\item Applications or Apps are software designed to run on mobile devices 
 		\item Apple reported 40 billion app downloads in first quarter of 2013 
-		\item Apps pose a security threat as they can have access to both user and the system such as contacts and camera.
+		\item Apps pose a security threat as they can have access to both user and the system such as to access contacts and send messages.
 		\end{itemize}
 		\end{frame}
 		\begin{frame}
@@ -290,40 +290,149 @@
 		\begin{itemize}
 		\item Mohsen et al. describes the possibility of an Android keyboard application that acts as a key-logger
 		\item A key-logger is a device or piece of software that records key strokes
-		\item usernames, passwords and credit card numbers  
+		% which are then sent to the attacker%
+		\item user names, passwords and credit card numbers  
 		\end{itemize}
+		 %
+		 % In order for an application to collect and send such information it needs a number of permissions
+		 %
 		\end{frame}
 		\begin{frame}
 		\frametitle{Application Permissions in Android}
+		%permissions are chategorized into two groups normal and dangerous
+		%Every App needs to specify its permissions in AndroidManifest.xml file, this 	        %file is read by the system and then 
+\begin{center}			
+			\begin{columns}[t]
+			\begin{column}[T]{5cm}
+			 \textbf{Normal permissions}
+			% permissions are those that are not considered harmfull to 
+			%the user or the system these are granted automatically
+			\end{column}
+			\begin{column}[T]{5cm}
+			\textbf{Dangerous permissions}
+			% permissions considered harmfull to the user or the system
+			% these must be oked by the user. Most of the time a user 
+			%either doesn't know the dangers of these permissions or more 
+			%likely doesn't really care 
+			Example would be the ability to access user data, send SMS messages, access camera.
+			\end{column}
+				
+			\end{columns}
+			\end{center}
 		\end{frame}
 		
 	\subsection{Solution}
 		\begin{frame}
 		\frametitle{KBS Checker}
+		%Mohsen et al. designed a software system called KBS Checker.
+		%KBS Checker reads through all the XML permission files of 		
+		%installed apps, looking for combinations of permissions that
+		% could potentially indicate a key-logging app.
+		%This same Idea could be applied to detect malicious apps and 
+		%inform users of this threat.
+		\begin{columns}[t]
+		\begin{column}{.45\textwidth}
+		\textbf{KBS Checker}
+		\begin{itemize}
+		\item Reads app Permissions through \textit{PackageManager}
+		\item Looks for dangerous combinations of permissions
+		\item Warns user with the app's name and the threat it could pose
+		\end{itemize}
+		\end{column}
+		\begin{column}{.45\textwidth}
+			\textbf{Image of KBS Checker}
+		\end{column}
+		\end{columns}
 		\end{frame}
 		
 		
 	% ------     Ranged Side-channel Attack      ---------%		
 		
 \section{Ranged Side-channel Attack}
+        \begin{frame}
+		\frametitle{Ranged Side channel}
+		\begin{columns}
+		\begin{column}{.45\textwidth}
+		Kenworthy et al. described an attack using inexpensive radio equipment to capture and analyze electro magnetic (EM) to perform a ranged side-channel attack.
+		\end{column}
+		\begin{column}{.45\textwidth}
+			image of some of the equipment
+		\end{column}
+		\end{columns}
+		% Intro for the researchers and about their
+		% Ranged side channel attack 
+		%  and how using basic equipment they can			
+		% pick up the EM(Electro Magnetic) radiation produced from the 
+		% device during when it is preforming encryption
+		%
+		% -crypto procedures require quite a bit of computation -> 		  
+		%requiring mor  power and thus leades to fluctuations in EM 
+		%Strength
+		\end{frame}
 	\subsection{Side channel attack}
 		\begin{frame}
 		\frametitle{What is a Side channel attack?}
+			\begin{itemize}
+			\item Cryptographic attack like man-in-the middle\\
+			\item Uses physical properties of the machine doing the encryption revealing by-products of the encryption process.  \\
+			\item physical properties can include things such as cpu heat, power consumption or even sound.
+		\end{itemize}
+			% Another cryptographic attack like MIM
+			% Uses physical properties of a machine while its preforming 
+			%encryption
+			% Heat, Sound, Power 
+			% uses these properties to exploit characteristics of a chiper 			%to derive the key
+			% usually invasive requiring direct access to the device
 		\end{frame}
 		\begin{frame}
-		\frametitle{RSA Example}
+		\frametitle{RSA}
+		\begin{columns}[c]
+		\begin{column}{.45\textwidth}
+		\textbf{RSA}
+		 \begin{itemize}
+		 \item Commonly used asymmetric cipher used for key establishment
+		 \item Uses Square and Multiply method for more efficient modular exponentiation of large positive numbers.
+			\end{itemize}
+		 \end{column}
+		 
+		 \begin{column}{.45\textwidth}
+		 \textbf{Square and Multiply}
+		 \[x^n = \left\{
+  \begin{array}{lr}
+    x(x^2)^{\frac{n-1}{2}} &  \text{: if n is odd} \\
+    (x^2)^{\frac{n}{2}} & \text{: if n is even}
+  \end{array}
+\right.
+\]
+		 \end{column}
+		 \end{columns}
+		% Commonly used Assymetric cryptographic algorithm
+		% using large prime numbers. Utalizes square and multiply method 
+		% for faster computations
+		%
+		% Show square and multiply method
+		%
+		% Example RSA attack 
+		\end{frame}
+		\begin{frame}
+		   ADD RSA attack example
 		\end{frame}
 	\subsection{Side channel through EM }
-		\begin{frame}
-		\frametitle{Ranged Side channel}
-		\end{frame}
 		
 		\begin{frame}
 		\frametitle{Findings}
+		%
+		% Tested this on multiple devices with different OSs
+		% Using a number of different ciphers
+		% were able to desern keys of ciphers 
 		\end{frame}
 		
 		\begin{frame}
 		\frametitle{Solution}
+			%
+			% add noise during cryptographic computations
+			% 
+			%
 		\end{frame}
 \section{Conclusion}
 	\begin{frame}
