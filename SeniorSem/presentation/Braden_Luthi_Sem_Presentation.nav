@@ -20,49 +20,49 @@
 \headcommand {\beamer@subsectionpages {4}{5}}
 \headcommand {\slideentry {2}{2}{1}{6/6}{GSM and UMTS}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\sectionentry {3}{GSM Weakness in UMTS}{7}{GSM Weakness in UMTS}{0}}
-\headcommand {\beamer@sectionpages {3}{6}}
-\headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\slideentry {3}{0}{2}{7/7}{}{0}}
+\headcommand {\slideentry {2}{2}{2}{7/7}{GSM and UMTS}{0}}
 \headcommand {\beamer@framepages {7}{7}}
+\headcommand {\sectionentry {3}{GSM Weakness in UMTS}{8}{GSM Weakness in UMTS}{0}}
+\headcommand {\beamer@sectionpages {3}{7}}
+\headcommand {\beamer@subsectionpages {6}{7}}
 \headcommand {\slideentry {3}{0}{3}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionpages {7}{8}}
-\headcommand {\slideentry {3}{1}{1}{9/9}{Authentication}{0}}
+\headcommand {\slideentry {3}{0}{4}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {3}{1}{2}{10/10}{Authentication}{0}}
+\headcommand {\beamer@subsectionpages {8}{9}}
+\headcommand {\slideentry {3}{1}{1}{10/10}{Authentication}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {3}{1}{3}{11/11}{Authentication}{0}}
+\headcommand {\slideentry {3}{1}{2}{11/11}{Authentication}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {3}{1}{4}{12/12}{Authentication}{0}}
+\headcommand {\slideentry {3}{1}{3}{12/12}{Authentication}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionpages {9}{12}}
-\headcommand {\slideentry {3}{2}{1}{13/13}{Man-in-the-middle Attack}{0}}
+\headcommand {\slideentry {3}{1}{4}{13/13}{Authentication}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {3}{2}{2}{14/14}{Man-in-the-middle Attack}{0}}
+\headcommand {\beamer@subsectionpages {10}{13}}
+\headcommand {\slideentry {3}{2}{1}{14/14}{Man-in-the-middle Attack}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {3}{2}{3}{15/15}{Man-in-the-middle Attack}{0}}
+\headcommand {\slideentry {3}{2}{2}{15/15}{Man-in-the-middle Attack}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {3}{2}{4}{16/16}{Man-in-the-middle Attack}{0}}
+\headcommand {\slideentry {3}{2}{3}{16/16}{Man-in-the-middle Attack}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {3}{2}{5}{17/17}{Man-in-the-middle Attack}{0}}
+\headcommand {\slideentry {3}{2}{4}{17/17}{Man-in-the-middle Attack}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {3}{2}{6}{18/18}{Man-in-the-middle Attack}{0}}
+\headcommand {\slideentry {3}{2}{5}{18/18}{Man-in-the-middle Attack}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@subsectionpages {13}{18}}
-\headcommand {\slideentry {3}{3}{1}{19/19}{GSM and UMTS Inter-working Networks}{0}}
+\headcommand {\slideentry {3}{2}{6}{19/19}{Man-in-the-middle Attack}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {3}{3}{2}{20/20}{GSM and UMTS Inter-working Networks}{0}}
+\headcommand {\beamer@subsectionpages {14}{19}}
+\headcommand {\slideentry {3}{3}{1}{20/20}{GSM and UMTS Inter-working Networks}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {3}{3}{3}{21/21}{GSM and UMTS Inter-working Networks}{0}}
+\headcommand {\slideentry {3}{3}{2}{21/21}{GSM and UMTS Inter-working Networks}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {3}{3}{4}{22/22}{GSM and UMTS Inter-working Networks}{0}}
+\headcommand {\slideentry {3}{3}{3}{22/22}{GSM and UMTS Inter-working Networks}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@subsectionpages {19}{22}}
+\headcommand {\beamer@subsectionpages {20}{22}}
 \headcommand {\slideentry {3}{4}{1}{23/23}{Solution}{0}}
 \headcommand {\beamer@framepages {23}{23}}
 \headcommand {\sectionentry {4}{Application Security Threat}{24}{Application Security Threat}{0}}
-\headcommand {\beamer@sectionpages {7}{23}}
+\headcommand {\beamer@sectionpages {8}{23}}
 \headcommand {\beamer@subsectionpages {23}{23}}
 \headcommand {\slideentry {4}{0}{2}{24/24}{}{0}}
 \headcommand {\beamer@framepages {24}{24}}
@@ -84,14 +84,14 @@
 \headcommand {\slideentry {5}{0}{3}{30/30}{}{0}}
 \headcommand {\beamer@framepages {30}{30}}
 \headcommand {\beamer@subsectionpages {29}{30}}
-\headcommand {\slideentry {5}{1}{1}{31/31}{Side channel attack}{0}}
+\headcommand {\slideentry {5}{1}{1}{31/31}{Side-channel attack}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {5}{1}{2}{32/32}{Side channel attack}{0}}
+\headcommand {\slideentry {5}{1}{2}{32/32}{Side-channel attack}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {5}{1}{3}{33/33}{Side channel attack}{0}}
+\headcommand {\slideentry {5}{1}{3}{33/33}{Side-channel attack}{0}}
 \headcommand {\beamer@framepages {33}{33}}
 \headcommand {\beamer@subsectionpages {31}{33}}
-\headcommand {\slideentry {5}{2}{1}{34/34}{Side channel through EM}{0}}
+\headcommand {\slideentry {5}{2}{1}{34/34}{Side-channel through EM}{0}}
 \headcommand {\beamer@framepages {34}{34}}
 \headcommand {\sectionentry {6}{Conclusion}{35}{Conclusion}{0}}
 \headcommand {\beamer@sectionpages {29}{34}}

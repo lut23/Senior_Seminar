@@ -129,6 +129,19 @@
 		\end{itemize}
 		%--Mention interworking networks here--%
 	\end{frame}
+	
+	\begin{frame}
+	\frametitle{Transitional Networks}
+	
+		
+		2011 survey where 2G devices had around 90\% population coverage where as 3G only had 45\%
+		\textbf{Transitional Networks}
+		\begin{itemize}
+			\item Periods between old and new technologies 
+			\item Old and new technologies will need to work together
+			\item Periods will last as long as the old technology continues to be used 
+		\end{itemize}
+\end{frame}
 
 	
 \section{GSM Weakness in UMTS}
@@ -254,21 +267,15 @@
   \end{center} 
 	\end{frame}
 \subsection{GSM and UMTS Inter-working Networks}
-\begin{frame}
-	\frametitle{Transitional Networks}
-	Move to after introduce gsm
-	 bullet points?\\
-		There are transitional periods between old and new technologies such as GSM and UMTS are required as old infrastructure and devices are replaced with the new. During these periods both old and new technologies will need to be able to successfully interact with one another.
-		\\2011 survey where 2G devices had around 90\% population coverage where as 3G only had 45\%
-\end{frame}
 
 	\begin{frame}
 	
 	\frametitle{Inter-working networks GSM and UMTS Hand Over}
-	
-	In order for GSM and UMTS systems to work all UMTS systems must be capable of performing GSM communication this includes a need for a handover. Handover refers to when a mobile is in the middle of preforming communication when it needs to switch to a new base station. For encryption this means there needs to be ways of transforming 128 bit UMTS keys into the 64 bit GSM keys and vise versa\\ 
-	
-	
+	\begin{itemize}
+		\item UMTS systems must be capable of performing GSM
+		\item Handover is when a moblie switches base stations during communication
+		\item For encryption this means there needs to be ways of transforming 128 bit UMTS keys into the 64 bit GSM keys and vise versa
+	\end{itemize}
 	\end{frame}
 	\begin{frame}
 		\frametitle{Conversion}
@@ -293,7 +300,7 @@
 \begin{frame}
 	\frametitle{GSM Man-in-the-middle weakness in UMTS}
 	\begin{itemize}
-	\item[1]Meyer et al describe a Man-in-the-middle attack against UMTS using GSM's man-in-the-middle weakness.
+	\item[1]Meyer et al describe a Man-in-the-middle attack against UMTS using GSM's Man-in-the-middle weakness.
 	\item[2]An attacker sets up a dummy base station tricks a UMTS device into connecting to it
 	\item[3]Attacker relays messages between mobile device and the legitimate network
 	\item[4]During Hand Shake procedure the attacker selects A5/0 algorithm
@@ -319,7 +326,7 @@
 		\begin{itemize}
 		\item Applications or Apps are software designed to run on mobile devices 
 		\item Apple reported 40 billion app downloads in first quarter of 2013 
-		\item Apps pose a security threat as they can have access to both user and the system such as to access contacts and send messages.
+		\item Apps pose a security threat as they can have access to both user data and the system methods such as to access contacts and send messages.
 		\end{itemize}
 		\end{frame}
 		\begin{frame}
@@ -338,10 +345,12 @@
 		\frametitle{Application Permissions in Android}
 		%permissions are chategorized into two groups normal and dangerous
 		%Every App needs to specify its permissions in AndroidManifest.xml file, this 	        %file is read by the system and then 
-\begin{center}			
+\begin{center}
+
 			\begin{columns}[t]
 			\begin{column}[T]{5cm}
 			 \textbf{Normal permissions}
+			 \\Give an application access to application-level features 
 			% permissions are those that are not considered harmfull to 
 			%the user or the system these are granted automatically
 			\end{column}
@@ -351,10 +360,13 @@
 			% these must be oked by the user. Most of the time a user 
 			%either doesn't know the dangers of these permissions or more 
 			%likely doesn't really care 
-			Example would be the ability to access user data, send SMS messages, access camera.
+			Example would be the ability to access user data or send SMS messages.
 			\end{column}
 				
 			\end{columns}
+						\begin{itemize}
+			\item Permissions are declared in an XML file read during app installation
+			\end{itemize}
 			\end{center}
 		\end{frame}
 		
@@ -388,7 +400,7 @@
 		
 \section{Ranged Side-channel Attack}
         \begin{frame}
-		\frametitle{Ranged Side channel}
+		\frametitle{Ranged Side-channel}
 		\begin{columns}
 		\begin{column}{.45\textwidth}
 		Kenworthy et al. described an attack using inexpensive radio equipment to capture and analyze electro magnetic (EM) to perform a ranged side-channel attack.
@@ -411,13 +423,14 @@
 		%requiring mor  power and thus leades to fluctuations in EM 
 		%Strength
 		\end{frame}
-	\subsection{Side channel attack}
+	\subsection{Side-channel attack}
 		\begin{frame}
-		\frametitle{What is a Side channel attack?}
+		\frametitle{What is a Side-channel attack?}
 			\begin{itemize}
 			\item Cryptographic attack like man-in-the middle\\
 			\item Uses physical properties of the machine doing the encryption revealing by-products of the encryption process.  \\
 			\item physical properties can include things such as cpu heat, power consumption or even sound.
+			\item Attacker can analyze these by-products to discover crucial parts of the cryptographic process such as portions of plain-text or key
 		\end{itemize}
 			% Another cryptographic attack like MIM
 			% Uses physical properties of a machine while its preforming 
@@ -459,7 +472,7 @@
 		\begin{frame}
 		  \includegraphics[width= \textwidth]{Images/Power_attack.png} 
 		\end{frame}
-	\subsection{Side channel through EM}
+	\subsection{Side-channel through EM}
 		
 		\begin{frame}
 		\frametitle{Findings}
@@ -493,6 +506,7 @@
 		\end{frame}
 \section{Conclusion}
 	\begin{frame}
+		Security is often difficult to do as technology continues to rapidly advance old technologies that were once secure become insecure and new technologies continue to add to complexity and need for security.
 		\frametitle{Conclusion}
 		\end{frame}	
 		
