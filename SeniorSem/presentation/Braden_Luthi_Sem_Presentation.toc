@@ -6,12 +6,12 @@
 \beamer@sectionintoc {3}{GSM Weakness in UMTS}{8}{0}{2}
 \beamer@subsectionintoc {3}{1}{Authentication}{10}{0}{2}
 \beamer@subsectionintoc {3}{2}{Man-in-the-middle Attack}{14}{0}{2}
-\beamer@subsectionintoc {3}{3}{GSM and UMTS Inter-working Networks}{20}{0}{2}
-\beamer@subsectionintoc {3}{4}{Solution}{23}{0}{2}
-\beamer@sectionintoc {4}{Application Security Threat}{24}{0}{3}
-\beamer@subsectionintoc {4}{1}{Applications}{25}{0}{3}
-\beamer@subsectionintoc {4}{2}{Solution}{28}{0}{3}
-\beamer@sectionintoc {5}{Ranged Side-channel Attack}{29}{0}{4}
-\beamer@subsectionintoc {5}{1}{Side-channel attack}{31}{0}{4}
-\beamer@subsectionintoc {5}{2}{Side-channel through EM}{34}{0}{4}
-\beamer@sectionintoc {6}{Conclusion}{35}{0}{5}
+\beamer@subsectionintoc {3}{3}{GSM and UMTS Inter-working Networks}{21}{0}{2}
+\beamer@subsectionintoc {3}{4}{Solution}{24}{0}{2}
+\beamer@sectionintoc {4}{Application Security Threat}{25}{0}{3}
+\beamer@subsectionintoc {4}{1}{Applications}{26}{0}{3}
+\beamer@subsectionintoc {4}{2}{Solution}{29}{0}{3}
+\beamer@sectionintoc {5}{Ranged Side-channel Attack}{30}{0}{4}
+\beamer@subsectionintoc {5}{1}{Side-channel attack}{32}{0}{4}
+\beamer@subsectionintoc {5}{2}{Side-channel through EM}{35}{0}{4}
+\beamer@sectionintoc {6}{Conclusion}{36}{0}{5}

@@ -245,6 +245,18 @@
 	$Mallory$ ``send \$2000 to account 1099"[key$_{Bob}$] $\rightarrow$ $Bob$
 	\end{description}	
 \end{frame}
+\begin{frame}
+	\frametitle{GSM Man-in-the-middle attack}
+	
+	\begin{itemize}
+	 \item [1] An attacker impersonates a GSM base station and tricks a device into connecting to it
+	 \item[2] Attacker relays messages between mobile device and the legitimate network
+	\item[3] During Hand Shake procedure the attacker can select A5/0 algorithm  
+	\end{itemize}
+	\\
+With this done the attacker can listen in on or even edit communications between the mobile and legitimate network.
+	
+\end{frame}
 		% add man in the middle attack example		
 %-----------UMTS Authentication-----------------%
 	\begin{frame}
@@ -275,12 +287,17 @@
 	\frametitle{Inter-working networks GSM and UMTS Hand Over}
 	\begin{itemize}
 		\item UMTS systems must be capable of performing GSM
-		\item Handover is when a moblie switches base stations during communication
+		\item Handover is when a mobile switches base stations during communication
 		\item For encryption this means there needs to be ways of transforming 128 bit UMTS keys into the 64 bit GSM keys and vise versa
 	\end{itemize}
 	\end{frame}
 	\begin{frame}
 		\frametitle{Conversion}
+			GSM: $K_{ses}$ \longleftrightarrow UMTS: $C_{ses}\text{, } I_{K}$\\
+ 			$\oplus$ : EXOR\\
+			$\|$: Append
+ \vspace{.5cm}
+	
 		\textbf{UMTS to GSM}
 		\begin{equation}
 			\label{C_3}
@@ -301,11 +318,11 @@
 		
 \begin{frame}
 	\frametitle{GSM Man-in-the-middle weakness in UMTS}
+	Meyer et al describe a Man-in-the-middle attack against UMTS using GSM's Man-in-the-middle weakness.
 	\begin{itemize}
-	\item[1]Meyer et al describe a Man-in-the-middle attack against UMTS using GSM's Man-in-the-middle weakness.
-	\item[2]An attacker sets up a dummy base station tricks a UMTS device into connecting to it
-	\item[3]Attacker relays messages between mobile device and the legitimate network
-	\item[4]During Hand Shake procedure the attacker selects A5/0 algorithm
+	\item[1] An attacker sets up a dummy base station tricks a UMTS device into connecting to it
+	\item[2] Attacker relays messages between mobile device and the legitimate network
+	\item[3] During Hand Shake procedure the attacker selects A5/0 algorithm
 	\end{itemize}
 	
 	
@@ -518,10 +535,6 @@
 			\Huge Questions?
 			\end{center}
 		\end{frame}	
-		\begin{frame}
-		\frametitle{References}
-		\end{frame}
-
 \end{document}
 
 
