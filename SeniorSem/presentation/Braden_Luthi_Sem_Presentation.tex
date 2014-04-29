@@ -89,13 +89,13 @@
 	
 		Cryptography or `secret writing' is the study and practice of techniques for securing communications between two parties. \linebreak
 		\begin{itemize}
-			\item \textbf{plain-text}  Readable message to be sent during communications.
-			\item \textbf{cipher-text} Unreadable form of the message
-			\item \textbf{key} parameter for cryptographic algorithm or cipher		
-			\item \textbf{cipher} method for transforming plain-text
+			\item \textbf{Plain-text}  Readable message to be sent during communications.
+			\item \textbf{Cipher-text} Unreadable form of the message
+			\item \textbf{Key} Parameter for cryptographic algorithm or cipher		
+			\item \textbf{Cipher} Method for transforming plain-text
 			\begin{itemize}
-				\item \textbf{Encrypt} transform plain-text to cipher-text
-				\item \textbf{Decrypt} transform cipher-text back into plain-text
+				\item \textbf{Encrypt} Transform plain-text to cipher-text
+				\item \textbf{Decrypt} Transform cipher-text back into plain-text
 			\end{itemize}
 			%--add toy cipher example--%
 		\end{itemize}		
@@ -105,17 +105,17 @@
 	%basic introduction to cryptography and vocabulary
 	
 	\end{frame}
-	\begin{frame}
-	\frametitle{Cryptography}
-		\begin{itemize}
-			\item \textbf{Symmetric cryptography} 
-			Both parties share a secret key for encryption and decryption
-			\item \textbf{Asymmetric cryptography}
-			Each individual has a public and a private key. Parties use the public keys for encryption and the private keys for decryption
-		\end{itemize}
+%	\begin{frame}
+%	\frametitle{Cryptography}
+%		\begin{itemize}
+%			\item \textbf{Symmetric cryptography} 
+%			Both parties share a secret key for encryption and decryption
+%			\item \textbf{Asymmetric cryptography}
+%			Each individual has a public and a private key. Parties use the public keys for encryption and the private keys for decryption
+%		\end{itemize}
 		%--add Asymmetric example--%
-	
-	\end{frame}
+%	
+%	\end{frame}
  % ------------------- GSM and UMTS Background ---------------------------%
 \subsection{GSM and UMTS}
 	
@@ -452,7 +452,7 @@ With this done the attacker can listen in on or even edit communications between
 			\begin{itemize}
 			\item Cryptographic attack like man-in-the middle\\
 			\item Uses physical properties of the machine doing the encryption revealing by-products of the encryption process.  \\
-			\item physical properties can include things such as cpu heat, power consumption or even sound.
+			\item Physical properties can include things such as cpu heat, power consumption or even sound.
 			\item Attacker can analyze these by-products to discover crucial parts of the cryptographic process such as portions of plain-text or key
 		\end{itemize}
 			% Another cryptographic attack like MIM
@@ -510,12 +510,13 @@ With this done the attacker can listen in on or even edit communications between
 		\begin{column}{.45\textwidth}
 		\textbf{Findings}
 		\begin{itemize}
-		\item tested on multiple os and devices
-		\item tested multiple algorithms
+		\item Tested on multiple os and devices
+		\item Tested multiple algorithms
+		\item Tests ranged from a few cm away to several feet.
 		\end{itemize}
 		\textbf{Solution}
 		\begin{itemize}
-		\item add noise to RSA
+		\item Add noise to RSA
 		\item Bulk encryption
 		\end{itemize}
 		 
