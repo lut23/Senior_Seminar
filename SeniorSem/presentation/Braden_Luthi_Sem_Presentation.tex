@@ -134,11 +134,12 @@
 	\frametitle{Transitional Periods}
 	
 		
-		2011 survey where 2G devices had around 90\% population coverage where as 3G only had 45\%\\
-
-		\textbf{Transitional periods}\\
+		
 
 		\begin{itemize}
+		\item 2011 survey where 2G devices had around 90\% population coverage where as 3G only had 45\%\\
+	\vspace{.25cm}
+		\textbf{Transitional periods}\\
 			\item Periods between old and new technologies 
 			\item Old and new technologies will need to work together creating Inter-working networks
 			\item Periods will last as long as the old technology continues to be used 
@@ -322,8 +323,9 @@ With this done the attacker can listen in on or even edit communications between
 	\begin{itemize}
 	\item[1] An attacker sets up a dummy base station tricks a UMTS device into connecting to it
 	\item[2] Attacker relays messages between mobile device and the legitimate network
-	\item[3] During Hand Shake procedure the attacker selects A5/0 algorithm
+	\item[3] During Hand Shake procedure the attacker selects A5/2 algorithm using a known attack is able to get the session key. 
 	\end{itemize}
+	\vspace{.25cm}Once the session key is obtained an attacker can use the key transformation functions whenever a handover is preformed.
 	
 	
 	% refer back to GSM authentication diagram ?
@@ -379,12 +381,14 @@ With this done the attacker can listen in on or even edit communications between
 			% these must be oked by the user. Most of the time a user 
 			%either doesn't know the dangers of these permissions or more 
 			%likely doesn't really care 
-			Example would be the ability to access user data or send SMS messages.
+			Give an application access to user information or system features.
 			\end{column}
 				
 			\end{columns}
+			\vspace{.25cm}
 						\begin{itemize}
 			\item Permissions are declared in an XML file read during app installation
+			\item Dangerous permissions must be accepted by the user.
 			\end{itemize}
 			\end{center}
 		\end{frame}
@@ -489,7 +493,14 @@ With this done the attacker can listen in on or even edit communications between
 		% Example RSA attack 
 		\end{frame}
 		\begin{frame}
+			\textbf{Power analysis attack on RSA}
 		  \includegraphics[width= \textwidth]{Images/Power_attack.png} 
+		  \begin{itemize}
+		  \item Shorter spikes in power consumption are a squaring(S) operation
+		  \item Longer spikes in power consumption are a square and multiply(SM) operation
+		  \item S: 0 in the key
+		  \item SM: 1 in the key
+		  \end{itemize}
 		\end{frame}
 	\subsection{Side-channel through EM}
 		
