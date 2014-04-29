@@ -1,17 +1,15 @@
-\BOOKMARK [2][]{Outline0.1}{Overview}{}
-\BOOKMARK [3][]{Outline0.1.1.2}{}{Outline0.1}
-\BOOKMARK [2][]{Outline0.2}{Background}{}
-\BOOKMARK [3][]{Outline0.2.1.4}{Cryptography}{Outline0.2}
-\BOOKMARK [3][]{Outline0.2.2.5}{GSM and UMTS}{Outline0.2}
-\BOOKMARK [2][]{Outline0.3}{GSM Weakness in UMTS}{}
-\BOOKMARK [3][]{Outline0.3.1.9}{Authentication}{Outline0.3}
-\BOOKMARK [3][]{Outline0.3.2.13}{Man-in-the-middle Attack}{Outline0.3}
-\BOOKMARK [3][]{Outline0.3.3.20}{GSM and UMTS Inter-working Networks}{Outline0.3}
-\BOOKMARK [3][]{Outline0.3.4.23}{Solution}{Outline0.3}
-\BOOKMARK [2][]{Outline0.4}{Application Security Threat}{}
-\BOOKMARK [3][]{Outline0.4.1.25}{Applications}{Outline0.4}
-\BOOKMARK [3][]{Outline0.4.2.28}{Solution}{Outline0.4}
-\BOOKMARK [2][]{Outline0.5}{Ranged Side-channel Attack}{}
-\BOOKMARK [3][]{Outline0.5.1.31}{Side-channel attack}{Outline0.5}
-\BOOKMARK [3][]{Outline0.5.2.34}{Side-channel through EM}{Outline0.5}
-\BOOKMARK [2][]{Outline0.6}{Conclusion}{}
+\BOOKMARK [2][]{Outline0.2}{Background}{}% 1
+\BOOKMARK [3][]{Outline0.2.1.4}{Cryptography}{Outline0.2}% 2
+\BOOKMARK [3][]{Outline0.2.2.5}{GSM and UMTS}{Outline0.2}% 3
+\BOOKMARK [2][]{Outline0.3}{GSM Weakness in UMTS}{}% 4
+\BOOKMARK [3][]{Outline0.3.1.9}{Authentication}{Outline0.3}% 5
+\BOOKMARK [3][]{Outline0.3.2.13}{Man-in-the-middle Attack}{Outline0.3}% 6
+\BOOKMARK [3][]{Outline0.3.3.20}{GSM and UMTS Inter-working Networks}{Outline0.3}% 7
+\BOOKMARK [3][]{Outline0.3.4.23}{Solution}{Outline0.3}% 8
+\BOOKMARK [2][]{Outline0.4}{Application Security Threat}{}% 9
+\BOOKMARK [3][]{Outline0.4.1.25}{Applications}{Outline0.4}% 10
+\BOOKMARK [3][]{Outline0.4.2.28}{Solution}{Outline0.4}% 11
+\BOOKMARK [2][]{Outline0.5}{Ranged Side-channel Attack}{}% 12
+\BOOKMARK [3][]{Outline0.5.1.31}{Side-channel attack}{Outline0.5}% 13
+\BOOKMARK [3][]{Outline0.5.2.34}{Side-channel through EM}{Outline0.5}% 14
+\BOOKMARK [2][]{Outline0.6}{Conclusion}{}% 15
